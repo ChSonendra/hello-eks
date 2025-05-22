@@ -6,7 +6,7 @@ imagePullSecrets:
 image:
   repository: chaudharysonendra/int-node  # ✅ Your Docker Hub image
   pullPolicy: IfNotPresent
-  tag: build-1747898480  
+  tag: build-1747927658
 
 service:
   type: ClusterIP

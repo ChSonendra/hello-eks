@@ -1,9 +1,12 @@
 replicaCount: 1
 
+imagePullSecrets:
+  dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiJjaGF1ZGhhcnlzb25lbmRyYSIsInBhc3N3b3JkIjoiZGNrcl9wYXRfWDRfT3JlX2JxU0VXNmNoMGhfX1J5Y0FjN3NZIiwiZW1haWwiOiJjaGF1ZGhhcnkuc29uZW5kcmFAZ21haWwuY29tIiwiYXV0aCI6IlkyaGhkV1JvWVhKNWMyOXVaVzVrY21FNlpHTnJjbDl3WVhSZldEUmZUM0psWDJKeFUwVlhObU5vTUdoZlgxSjVZMEZqTjNOWiJ9fX0=
+
 image:
-  repository: devjohn/node-app  # ✅ Your Docker Hub image
+  repository: chaudharysonendra/int-node  # ✅ Your Docker Hub image
   pullPolicy: IfNotPresent
-  tag: latest  # ✅ This will be replaced by Jenkins (e.g., build number)
+  tag: latest  
 
 service:
   type: ClusterIP

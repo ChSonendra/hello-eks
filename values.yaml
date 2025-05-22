@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: devjohn/node-app  # ✅ Your Docker Hub image
+  pullPolicy: IfNotPresent
+  tag: latest  # ✅ This will be replaced by Jenkins (e.g., build number)
+
+service:
+  type: ClusterIP
+  port: 3000
+
+containerPort: 3000
+
+resources: {}
